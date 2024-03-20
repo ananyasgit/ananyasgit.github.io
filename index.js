@@ -2,10 +2,10 @@ let speechText;
 let predictOutput;
 let theButton;
 let vocab;
-let vocabPath = 'https://raw.githubusercontent.com/ananyasgit/ananyasgit.github.io/main/Tokenizer/tokenizer_dictionary.json';
+let vocabPath = 'https://raw.githubusercontent.com/andrewsale/MP-app.github.io/main/Tokenizer/tokenizer_dictionary.json';
 let tokenizer;
 let model;
-let modelPath = 'https://raw.githubusercontent.com/ananyasgit/ananyasgit.github.io/main/Model_js/model.json';
+let modelPath = 'https://raw.githubusercontent.com/andrewsale/MP-app.github.io/main/Model_js/model.json';
 
 // For some reason the L2 regularization in tf does not 
 // connect to the L2 regularizer in tfjs
@@ -67,9 +67,9 @@ async function predictParty() {
         return x
     })
     if (prob < 0.5) {
-        return `<p style="color:rgb(255,100,100); font-size:150%;">We predict this sms/email is <b>FRAUD</b> party, with probability ${(100 - prob*100).toFixed(0)}%</p>`;
+        return `<p style="color:rgb(255,100,100); font-size:150%;">We predict this is by a member of the <b>LABOUR</b> party, with probability ${(100 - prob*100).toFixed(0)}%</p>`;
     } else {
-        return `<p style="color:rgb(100,100,255); font-size:150%;">We predict this sms/email is <b>LEGITIMATE</b> party, with probability ${(prob*100).toFixed(0)}%</p>`;
+        return `<p style="color:rgb(100,100,255); font-size:150%;">We predict this is by a member of the <b>CONSERVATIVE</b> party, with probability ${(prob*100).toFixed(0)}%</p>`;
     }    
 }
 
