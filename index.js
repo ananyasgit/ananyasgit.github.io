@@ -67,9 +67,9 @@ async function predictParty() {
         return x
     })
     if (prob < 0.5) {
-        return `<p style="color:rgb(255,100,100); font-size:150%;">We predict this is by a member of the <b>LABOUR</b> party, with probability ${(100 - prob*100).toFixed(0)}%</p>`;
+        return `<p style="color:rgb(255,100,100); font-size:150%;">We predict this is legitimate, with probability ${(100 - prob*100).toFixed(0)}%</p>`;
     } else {
-        return `<p style="color:rgb(100,100,255); font-size:150%;">We predict this is by a member of the <b>CONSERVATIVE</b> party, with probability ${(prob*100).toFixed(0)}%</p>`;
+        return `<p style="color:rgb(100,100,255); font-size:150%;">We predict this is fraudulent, with probability ${(prob*100).toFixed(0)}%</p>`;
     }    
 }
 
