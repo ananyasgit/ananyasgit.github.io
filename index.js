@@ -69,7 +69,7 @@ async function predictParty() {
     if (prob < 0.5) {
         return `<p style="color:rgb(255,100,100); font-size:150%;">We predict this sms/email is <b>FRAUD</b> party, with probability ${(100 - prob*100).toFixed(0)}%</p>`;
     } else {
-        return `<p style="color:rgb(0,128,0); font-size:150%;">We predict this sms/email is <b>LEGITIMATE</b> party, with probability ${(prob*100).toFixed(0)}%</p>`;
+        return `<p style="color:rgb(100,100,255); font-size:150%;">We predict this sms/email is <b>LEGITIMATE</b> party, with probability ${(prob*100).toFixed(0)}%</p>`;
     }    
 }
 
