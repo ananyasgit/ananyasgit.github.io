@@ -2,10 +2,10 @@ let speechText;
 let predictOutput;
 let theButton;
 let vocab;
-let vocabPath = 'https://raw.githubusercontent.com/andrewsale/MP-app.github.io/main/Tokenizer/tokenizer_dictionary.json';
+let vocabPath = 'https://raw.githubusercontent.com/ananyasgit/ananyasgit.github.io/main/Tokenizer/tokenizer_dictionary.json';
 let tokenizer;
 let model;
-let modelPath = 'https://raw.githubusercontent.com/andrewsale/MP-app.github.io/main/Model_js/model.json';
+let modelPath = 'https://raw.githubusercontent.com/ananyasgit/ananyasgit.github.io/main/Model_js/model.json';
 
 // For some reason the L2 regularization in tf does not 
 // connect to the L2 regularizer in tfjs
